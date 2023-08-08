@@ -37,8 +37,8 @@ jobs:
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
-          service-id: ${{secrets.VASILBG_API}}
-          api-key: ${{secrets.VASILBG_SERVICE}}
+          service-id: ${{secrets.VASILBG_SERVICE}}
+          api-key: ${{secrets.VASILBG_API}}
 
   run-ui-tests:
     needs: deploy
