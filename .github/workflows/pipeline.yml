@@ -29,6 +29,7 @@ jobs:
     - run: npm install
     - run: npm run test:unit
     - run: echo "vasilmg-test"
+    - run: npx playwright test
     - run: npm run test:ui
   deploy:
     needs: build
