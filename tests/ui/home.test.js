@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('Check home page', async ({ page }) => {
-    await page.goto('https://vasilmg-test-exam-prep.onrender.com/');
+    await page.goto('https://test-ui-vasilmg.onrender.com/');
     const heading = await page.$('h1');
     const text = await heading.textContent();
     expect(text).toContain("Movies Collection");  
